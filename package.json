@@ -1,0 +1,37 @@
+{
+  "name": "watchlist",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "database:create": "node ./database/create_database.js",
+    "database:migration": "node ./database/migrate_database.js",
+    "database:insert": "node ./database/insert_to_db.js"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "dotenv": "^16.4.7",
+    "mysql2": "^3.12.0",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-toastify": "^11.0.3",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^20.17.16",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --hover-color: #47c9e5;
+  --background-color: #3f2552;
+  --background-opacity-color: #3a2150e0;
+  --background-dark-color: #3a2150;
+  --background-light-color: #8843bb;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  /* width: 1600px; */
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
+  transition: all 0.3s ease-in-out;
+}
+
+p {
+  margin: 8px 0;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    width: calc(1200px - 60px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: calc(1024px - 60px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: calc(768px - 60px);
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: calc(480px - 60px);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+}
